@@ -1,0 +1,1247 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Quick Tip: How to Work with GitHub and Multiple Accounts | Nettuts+</title>
+
+<!-- Styles -->
+<link href="http://net.tutsplus.com/wp-content/themes/tuts/style.css?version=1.1" rel="stylesheet" type="text/css" media="screen" />
+<link href="http://net.tutsplus.com/wp-content/themes/tuts/images/theme/nettuts/theme.css?version=1.0.7" rel="stylesheet" type="text/css" media="screen" />
+ 
+<link href="http://net.tutsplus.com/wp-content/themes/tuts/css/print.css?version=1.0.5" rel="stylesheet" type="text/css" media="print" />
+<link href="http://envato.s3.amazonaws.com/widget/widget.css" rel="stylesheet" type="text/css" media="screen" />
+
+<link rel="shortcut icon" href="http://net.tutsplus.com/wp-content/themes/tuts/images/theme/nettuts/favicon.ico" />
+<link rel="apple-touch-icon" href="http://net.tutsplus.com/wp-content/themes/tuts/images/theme/nettuts/apple-touch-icon.png" />
+ 
+
+<!-- Page Size CSS -->
+<link href='http://net.tutsplus.com/wp-content/themes/tuts/css/large.css' rel='stylesheet' type='text/css' media='screen' />
+
+<!-- Scripts -->
+<link rel='stylesheet' id='ratings-css'  href='http://net.tutsplus.com/wp-content/plugins/wp-post-ratings/wp-post-ratings.css?ver=3.1.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://net.tutsplus.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js?ver=1.5.1'></script>
+<script type='text/javascript' src='http://net.tutsplus.com/wp-content/plugins/wp-post-ratings/wp-post-ratings.js?ver=3.1.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://net.tutsplus.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://net.tutsplus.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Nettuts+' href='http://net.tutsplus.com/' />
+<link rel='start' title='Launch!' href='http://net.tutsplus.com/articles/news/launch/' />
+<link rel='prev' title='Zend Framework from Scratch' href='http://net.tutsplus.com/tutorials/php/zend-framework-from-scratch/' />
+<link rel='next' title='Getting Started with Spine Mobile' href='http://net.tutsplus.com/tutorials/javascript-ajax/getting-started-with-spine-mobile/' />
+<link rel='shortlink' href='http://net.tutsplus.com/?p=22574' />
+
+<!-- All in One SEO Pack - Pro Version 1.72 by Michael Torbert of Semper Fi Web Design[231,305] -->
+<meta name="description" content="So you have a personal GitHub account; everything is working perfectly. But then, you get a new job, and now need to have the ability to push and pull to" />
+<meta name="keywords" content="git,github,tips,videos,tools &amp; tips" />
+<link rel="canonical" href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/" />
+<!-- /all in one seo pack Pro Version-->
+<script type="text/javascript" src="http://net.tutsplus.com/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("http://net.tutsplus.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"290",animation:"yes",encode:"no",initialvolume:"60",remaining:"no",noinfo:"yes",buffer:"5",checkpolicy:"no",rtl:"no",bg:"468175",text:"ffffff",leftbg:"468175",lefticon:"ffffff",volslider:"b2d1cb",voltrack:"FFFFFF",rightbg:"468175",rightbghover:"75ada2",righticon:"ffffff",righticonhover:"FFFFFF",track:"468175",loader:"75ada2",border:"468175",tracker:"75ada2",skip:"ffffff",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<script type="text/javascript" src="http://net.tutsplus.com/wp-content/plugins/flash-player/swfobject.js"></script><link rel="stylesheet" href="http://net.tutsplus.com/wp-content/plugins/organize-series/orgSeries.css" type="text/css" media="screen" /><meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+
+<script type="text/javascript" src="http://net.tutsplus.com/wp-content/themes/tuts/js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="http://net.tutsplus.com/wp-content/themes/tuts/js/jquery.ui.tabs.js"></script>
+<script type="text/javascript" src="http://net.tutsplus.com/wp-content/themes/tuts/js/jobs.main.js"></script>
+<script type="text/javascript" src="http://net.tutsplus.com/wp-content/themes/tuts/js/marketplace-url-rewriter.js?v=4"></script>
+<script type="text/javascript"> $(function() { MarketplaceUrlRewriter.rewrite_urls({host: window.location.host, target: document}) }) </script>
+
+<script type="text/javascript">
+  var ipad = function () {
+    return navigator.userAgent.match('iPad') != null
+  }
+  if (!ipad()) {
+    document.write('<script type="text/javascript" src="http://net.tutsplus.com/wp-content/themes/tuts/js/lazyload.js">')
+    document.write("<\/script>")
+  }
+  
+  var plus_member_logged_in = function() {
+    return (document.cookie.match('amember_logged_in') != null)
+  }
+  
+  // fix flash z-index
+  $("embed").attr("wmode", "opaque");
+  
+    $(function() {
+    $("#social_networking").tabs();
+    $('#facebook_tab').html('<div class="facebook_wrap"><fb:like-box href="http://facebook.com/nettutsplus" width="296" height="300" stream="false" connections="10"></fb:like-box></div>');
+  });
+    
+  $(function() {
+    
+    // Extra Posts Div 
+    var left = 15;
+    $('.extra_posts li div').each(function() {
+  		$(this).css('left', left);
+  		left += 114;
+  	});
+  	
+    // Subnavigation
+    $(".navigation li:has(ul)").addClass("parent");
+    
+    // Lazy Loading
+    if (!ipad()) {
+      $(".tutorial_image img").lazyload({
+        placeholder : "http://net.tutsplus.com/wp-content/themes/tuts/images/global/box.gif",
+        threshold : 200
+      });
+      $(".post_image img").lazyload({
+        placeholder : "http://net.tutsplus.com/wp-content/themes/tuts/images/global/box.gif",
+        threshold : 200
+      });
+      $(".comment_author img").lazyload({
+        placeholder : "http://net.tutsplus.com/wp-content/themes/tuts/images/global/box.gif",
+        threshold : 200
+      });
+    }
+    
+  });
+  
+  //External links 
+  $(function() {
+    $('a[rel~=external]').attr('target', 'blank');
+  });
+</script>
+
+
+<link rel="alternate" type="application/rss+xml" title="Nettuts+ RSS Feed" href="http://net.tutsplus.com/feed/" />
+<link rel="pingback" href="http://net.tutsplus.com/xmlrpc.php" />
+<meta name="google-site-verification" content="aoXTcdQJMMCGh8FUsMlj35Qw-2jK83Wpt7XnqUPB9KI" />
+<script type="text/javascript" src="http://net.tutsplus.com/wp-content/themes/tuts/js/single.js"></script>
+
+<link href="https://plus.google.com/100395074731712398322" rel="publisher" />
+<script type="text/javascript">
+(function(){
+  var po = document.createElement("script");
+  po.type = "text/javascript"; 
+  po.async = true;
+  po.src = "https://apis.google.com/js/plusone.js";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(po, s);
+})();
+</script>
+
+</head>
+
+<body class="single single-post postid-22574 single-format-standard">
+
+<!-- Tracking Code -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(
+    ['_setAccount', 'UA-11792865-8'],
+    ['_trackPageview'],
+    ['b._setAccount', 'UA-11792865-19'],
+    ['b._trackPageview']
+  );
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 
+        'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+<!-- END Tracking Code -->
+
+<!-- BuySellAds.com Ad Code -->
+<script type="text/javascript">
+if (!plus_member_logged_in()) {
+  (function(){
+    var bsa = document.createElement('script');
+       bsa.type = 'text/javascript';
+       bsa.async = true;
+       bsa.src = '//s3.buysellads.com/ac/bsa.js';
+    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+  })();
+}
+</script>
+<!-- END BuySellAds.com Ad Code -->
+
+<div id="fb-root"></div>
+<!-- Facebook Code -->
+<script type="text/javascript">
+(function(){
+  var fb = document.createElement('script');
+  fb.type = 'text/javascript';
+  fb.async = true;
+  fb.src = document.location.protocol + '//connect.facebook.net/en_US/all.js#xfbml=1';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(fb);
+})();
+</script>
+<!-- END Facebook Code -->
+
+
+<!-- Header -->
+<div id="header_wrap">
+  <div id="header">
+	
+    <a href="http://net.tutsplus.com" class="logo">Nettuts+</a>
+    
+    <ul class="top_navigation">
+      <li><a href="http://net.tutsplus.com/advertise/">Advertise</a></li>
+      <li><a href="http://net.tutsplus.com/about/write-a-tutorial/">Write for Us</a></li>
+      <li><a href="http://net.tutsplus.com/about/">About</a></li>
+      <li><a href="http://net.tutsplus.com/about/terms">Usage</a></li>
+      <li class="top-marketplace-ad ad-themeforest"><a href="http://themeforest.net?WT.mc_id=TutsHeader" rel="nofollow external">Buy &amp; Sell Website Templates</a></li>    </ul>
+    
+    <div id="navigation">
+    	<ul class="navigation">
+    	  <li><a href="http://net.tutsplus.com">Home</a></li>
+    	  <li><a href="http://net.tutsplus.com/category/tutorials/">Tutorials</a><ul class="child-nav">	<li class="cat-item cat-item-568"><a href="http://net.tutsplus.com/category/tutorials/asp-net/" title="ASP.NET programming tutorials.">ASP.NET</a>
+</li>
+	<li class="cat-item cat-item-464"><a href="http://net.tutsplus.com/category/tutorials/cmss/" title="Tutorials that details how to work with various CMSs.">CMSs</a>
+</li>
+	<li class="cat-item cat-item-547"><a href="http://net.tutsplus.com/category/tutorials/databases/" title="Learn how to work more efficiently with databases.">Databases</a>
+</li>
+	<li class="cat-item cat-item-286"><a href="http://net.tutsplus.com/category/tutorials/design-tutorials/" title="Learn the ins and outs of web design.">Design</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://net.tutsplus.com/category/tutorials/html-css-techniques/" title="Get up to speed with HTML and CSS.">HTML &amp; CSS</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://net.tutsplus.com/category/tutorials/javascript-ajax/" title="Learn about vanilla JavaScript, and the various popular libraries that are available, like jQuery.">JavaScript &amp; AJAX</a>
+</li>
+	<li class="cat-item cat-item-153"><a href="http://net.tutsplus.com/category/tutorials/other/" title="View all posts filed under Other">Other</a>
+</li>
+	<li class="cat-item cat-item-41"><a href="http://net.tutsplus.com/category/tutorials/php/" title="Learn how to use PHP.">PHP</a>
+</li>
+	<li class="cat-item cat-item-1285"><a href="http://net.tutsplus.com/category/tutorials/python-tutorials/" title="View all posts filed under Python">Python</a>
+</li>
+	<li class="cat-item cat-item-124"><a href="http://net.tutsplus.com/category/tutorials/ruby/" title="High quality Ruby and RoR tutorials and screencasts.">Ruby</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://net.tutsplus.com/category/tutorials/site-builds/" title="Learn how to convert a PSD to HTML from scratch.">Site Builds</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="http://net.tutsplus.com/category/tutorials/tools-and-tips/" title="Details the most popular tools when building web applications.">Tools &amp; Tips</a>
+</li>
+	<li class="cat-item cat-item-35"><a href="http://net.tutsplus.com/category/tutorials/wordpress/" title="Become a WordPress master.">Wordpress</a>
+</li>
+</ul></li>
+    	  <li><a href="http://net.tutsplus.com/category/articles/">Articles</a><ul class="child-nav">	<li class="cat-item cat-item-1334"><a href="http://net.tutsplus.com/category/articles/editorials/" title="Opinion pieces on the web development arena. ">Editorials</a>
+</li>
+	<li class="cat-item cat-item-128"><a href="http://net.tutsplus.com/category/articles/general/" title="Generic articles on web development.">General</a>
+</li>
+	<li class="cat-item cat-item-127"><a href="http://net.tutsplus.com/category/articles/interviews/" title="Interviews with prominent developers in the web development industry.">Interviews</a>
+</li>
+	<li class="cat-item cat-item-1084"><a href="http://net.tutsplus.com/category/articles/lectures/" title="Featured talks from web development conferences around the world.">Lectures</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://net.tutsplus.com/category/articles/news/" title="Recent news in the web development industry.">News</a>
+</li>
+	<li class="cat-item cat-item-1251"><a href="http://net.tutsplus.com/category/articles/quizzes/" title="Quizzes to check your knowledge.">Quizzes</a>
+</li>
+	<li class="cat-item cat-item-437"><a href="http://net.tutsplus.com/category/articles/reviews/" title="Reviews of new web apps, frameworks, and books.">Reviews</a>
+</li>
+	<li class="cat-item cat-item-1379"><a href="http://net.tutsplus.com/category/articles/roundups-articles/" title="Compilations of tools, frameworks and other assorted stuff.">Roundups</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://net.tutsplus.com/category/articles/web-roundups/" title="Compilations of popular articles from around the web.">Web Roundups</a>
+</li>
+</ul></li>
+    	  <li><a href="http://net.tutsplus.com/tag/tips/">Tips</a><ul class="child-nav"><li><a href="http://net.tutsplus.com/category/tutorials/tools-and-tips/?tag=tips" title="Tools &amp; Tips">Tools &amp; Tips</a></li><li><a href="http://net.tutsplus.com/category/tutorials/javascript-ajax/?tag=tips" title="JavaScript &amp; AJAX">JavaScript &amp; AJAX</a></li><li><a href="http://net.tutsplus.com/category/tutorials/html-css-techniques/?tag=tips" title="HTML &amp; CSS">HTML &amp; CSS</a></li><li><a href="http://net.tutsplus.com/category/tutorials/ruby/?tag=tips" title="Ruby">Ruby</a></li><li><a href="http://net.tutsplus.com/category/articles/general/?tag=tips" title="General">General</a></li></ul></li>    	      	  <li><a href="http://net.tutsplus.com/sessions/">Sessions</a></li>    	  <li><a href="http://net.tutsplus.com/tag/basix/">Basix</a><ul class="child-nav"><li><a href="http://net.tutsplus.com/category/tutorials/html-css-techniques/?tag=basix" title="HTML &amp; CSS">HTML &amp; CSS</a></li><li><a href="http://net.tutsplus.com/category/tutorials/php/?tag=basix" title="PHP">PHP</a></li><li><a href="http://net.tutsplus.com/category/tutorials/javascript-ajax/?tag=basix" title="JavaScript &amp; AJAX">JavaScript &amp; AJAX</a></li><li><a href="http://net.tutsplus.com/category/tutorials/ruby/?tag=basix" title="Ruby">Ruby</a></li><li><a href="http://net.tutsplus.com/category/articles/quizzes/?tag=basix" title="Quizzes">Quizzes</a></li></ul></li>    	  <li><a href="http://net.tutsplus.com/tag/videos/">Videos</a><ul class="child-nav"><li><a href="http://net.tutsplus.com/category/tutorials/tools-and-tips/?tag=videos" title="Tools &amp; Tips">Tools &amp; Tips</a></li><li><a href="http://net.tutsplus.com/category/tutorials/javascript-ajax/?tag=videos" title="JavaScript &amp; AJAX">JavaScript &amp; AJAX</a></li><li><a href="http://net.tutsplus.com/category/tutorials/html-css-techniques/?tag=videos" title="HTML &amp; CSS">HTML &amp; CSS</a></li><li><a href="http://net.tutsplus.com/category/tutorials/asp-net/?tag=videos" title="ASP.NET">ASP.NET</a></li></ul></li>              <li>
+          <a href="http://tutsplus.com/tutorials/?q=true&filter_topic=35" target="_blank">Premium</a>
+        </li>
+      </ul>
+      <a href="http://tutsplus.com/tutorials/?q=true&filter_topic=35" class="small_plus" target="_blank">Plus Premium</a>
+          </div>
+    
+    <div class="site_switcher">
+      <ul>
+        <li class="link-psd"><a href="http://psd.tutsplus.com/">Psdtuts+ <span>Adobe Photoshop</span></a></li>
+        <li class="link-net"><a href="http://net.tutsplus.com/">Nettuts+ <span>Web Development</span></a></li>
+        <li class="link-vector"><a href="http://vector.tutsplus.com/">Vectortuts+ <span>Illustrator and Vector</span></a></li>
+        <li class="link-audio"><a href="http://audio.tutsplus.com/">Audiotuts+ <span>Audio and Production</span></a></li>
+        <li class="link-ae"><a href="http://ae.tutsplus.com/">Aetuts+ <span>Adobe After Effects</span></a></li>
+        <li class="link-cg"><a href="http://cg.tutsplus.com/">Cgtuts+ <span>Computer Graphics</span></a></li>
+        <li class="link-active"><a href="http://active.tutsplus.com/">Activetuts+ <span>Browser App and Game Dev</span></a></li>
+        <li class="link-photo"><a href="http://photo.tutsplus.com/">Phototuts+ <span>Photography</span></a></li>
+        <li class="link-mobile"><a href="http://mobile.tutsplus.com/">Mobiletuts+ <span>Mobile Development</span></a></li>
+        <li class="link-webdesign"><a href="http://webdesign.tutsplus.com/">Webdesigntuts+ <span>Web Design</span></a></li>
+        <li class="link-wp"><a href="http://wp.tutsplus.com/">Wptuts+ <span>WordPress</span></a></li>
+      </ul>
+      <a href="javascript:void();" class="site_switcher_button">Toggle</a>
+    </div>
+    
+    <ul class="rss_subscribe">
+      <li><a href="http://feeds.feedburner.com/nettuts" class="header_subscribe">Subscribe</a>
+        <ul>
+          <li><a href="http://feeds.feedburner.com/nettuts">Full Post RSS</a></li>
+          <li><a href="http://feedproxy.google.com/nettuts-summary">Summary RSS</a></li>
+          <li><a href="http://feedburner.google.com/fb/a/mailverify?uri=nettuts">Subscribe via Email</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+    <ul class="twitter_subscribe">
+      <li><a href="http://twitter.com/envatowebdev" class="header_twitter">Twitter Updates</a>
+        <ul>
+          <li><a href="http://twitter.com/envatowebdev">Nettuts+</a></li>
+          <li><a href="http://twitter.com/tutsplus">Plus Network</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="search_form">
+      <form method="get" action="http://net.tutsplus.com">
+        <fieldset>
+          <input id="search_term" type="text" onclick="if(this.value == 'Search...') this.value='';" onblur="if(this.value.length == 0) this.value='Search...';" value="Search..." name="s" />
+          <input class="submit_button" type="submit" value="Search" />
+        </fieldset>
+      </form>
+    </div>
+
+  </div>
+</div>
+<!-- [END] Header -->
+
+<!-- Content Wrap -->
+<div id="content_wrap">
+  
+  <!-- Content -->
+  <div id="content" class="clearfix">
+
+    <!-- Page Wrap -->
+    <div class="page_wrap">
+      
+      <!-- Leader Board -->
+<div id="leader-board-wrap" style="display: none">
+    <div class="leader_board">
+    <a href="http://net.tutsplus.com/advertise/" class="LB_advert">Advertise Here</a>
+    <div class="lb_inner">
+      <div id="bsap_1245834" class="bsarocks bsap_d754f1e9ba63a736ba8ff5ece958f7dd"></div>    </div>
+  </div>
+  </div>
+<script type="text/javascript">
+  if (!plus_member_logged_in()) {
+    $('#leader-board-wrap').show()
+  }
+</script>
+<!-- [END] Leader Board -->
+
+      <!-- Page -->
+      <div id="page" class="single_post">
+      
+        <div class="page_inner">
+          
+                    
+            <div class="post post_inner" id="post-22574">
+  
+  <div class="tut_top">
+    
+    <!-- Post Image -->
+    <div class="post_image">
+      <a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/536_git/200.jpg" alt="Quick Tip: How to Work with GitHub and Multiple Accounts" width="200" height="200" /><div class="the_image_meta"><span class="image_meta videos">videos</span></div></a>    </div>
+    
+    <div class="preview">
+    
+      <!-- Post Taxonomies -->
+      <div class="post_taxonomy">
+        <ul><li><a href="http://net.tutsplus.com/tag/videos/">Videos</a><span>\</span></li><li><a href="http://net.tutsplus.com/category/tutorials/tools-and-tips/">Tools &amp; Tips</a></li></ul>      </div>
+      
+      <!-- Post Title -->
+      <h1 class="post_title">
+        Quick Tip: How to Work with GitHub and Multiple Accounts      </h1>
+      
+      <!-- Post Meta -->
+      <div class="post_meta">
+        <a href="http://net.tutsplus.com/author/jeffreyway/" title="Posts by Jeffrey Way">Jeffrey Way</a> on Nov 2nd 2011 with <a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/#comments" title="Comment on Quick Tip: How to Work with GitHub and Multiple Accounts">17 comments</a>      </div>
+    
+    </div>
+  
+  </div>
+  
+</div>
+
+<div class="tut_bottom">
+
+    <div class="tutorial_details">
+    <h5>Tutorial Details</h5>
+    <ul>
+      <li><li><strong>Tools Discussed: </strong>Git, GitHub, SSH </li>
+<li><strong>Difficulty: </strong>Moderate </li>
+<li><strong>Screencast Length: </strong>5 Mins. </li></li>    </ul>
+  </div>
+    
+    
+  <!-- Social Media -->
+  <div class="article_social_media">
+    
+    <div class="tweetmeme_btn">
+      <a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </div>
+    
+    <div class="facebook_send_btn">
+      <g:plusone size="medium" count="false"></g:plusone>
+    </div>
+    
+        
+    <div class="facebook_btn">
+      <fb:like layout="button_count" width="90" height="21"></fb:like>
+    </div>
+  
+  </div>
+  <!-- [END] Social Media -->
+  
+    
+</div>
+
+
+
+<div class="post post_inner_article">
+
+    
+  <script type="text/javascript">
+//<![CDATA[
+(function($) { $(function() { WpPostRatings({context: $('#post-22574'), post_id: 22574, rpc: 'http://net.tutsplus.com/wp-admin/admin-ajax.php', base_url: 'http://net.tutsplus.com', allow_voting: true}).init() })})(jQuery)
+//]]&gt;
+</script><p>So you have a personal <a href="http://github.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','github.com']);">GitHub</a> account; everything is working perfectly. But then, you get a new job, and now need to have the ability to push and pull to multiple accounts. How do you do that? I&#8217;ll show you how!</p>
+<p><span id="more-22574"></span></p>
+<hr />
+<h2> Prefer a Screencast? </h2>
+<div class="tutorial_image">
+   <iframe width="600" height="381" src="http://www.youtube.com/embed/fnSRBRiQIU8?hd=1" frameborder="0" allowfullscreen></iframe></p>
+<div>Choose <strong>720p</strong> for the best picture.</div>
+</div>
+<hr />
+<h2><span>Step 1 &#8211; </span>Create a New SSH Key</h2>
+<p>We need to generate a unique SSH key for our second GitHub account.</p>
+<p>
+<pre class="brush: bash; title: ; notranslate" title="">
+ssh-keygen -t rsa -C &quot;your-email-address&quot;
+</pre>
+</p>
+<p>Be careful that you don&#8217;t over-write your existing key for your personal account. Instead, when prompted, save the file as <code>id_rsa_COMPANY</code>. In my case, I&#8217;ve saved the file to <code>~/.ssh/id_rsa_nettuts</code>.</p>
+<hr />
+<h2><span>Step 2 &#8211; </span>Attach the New Key</h2>
+<p>Next, login to your second GitHub account, browse to &#8220;Account Overview,&#8221; and attach the new key, within the &#8220;SSH Public Keys&#8221; section. To retrieve the value of the key that you just created, return to the Terminal, and type: <code>vim ~/.ssh/id_rsa_COMPANY.pub</code>. Copy the entire string that is displayed, and paste this into the GitHub textarea. Feel free to give it any title you wish.</p>
+<p>Next, because we saved our key with a unique name, we need to tell SSH about it. Within the Terminal, type: <code>ssh-add ~/.ssh/id_rsa_COMPANY</code>. If successful, you&#8217;ll see a response of &#8220;Identity Added.&#8221;</p>
+<hr />
+<h2><span>Step 3 &#8211; </span>Create a Config File</h2>
+<p>We&#8217;ve done the bulk of the workload; but now we need a way to specify when we wish to push to our personal account, and when we should instead push to our company account. To do so, let&#8217;s create a <code>config</code> file.</p>
+<pre class="brush: bash; title: ; notranslate" title="">
+touch ~/.ssh/config
+vim config
+</pre>
+<p>If you&#8217;re not comfortable with Vim, feel free to open it within any editor of your choice. Paste in the following snippet.</p>
+<pre class="brush: bash; title: ; notranslate" title="">
+#Default GitHub
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+</pre>
+<p>This is the default setup for pushing to our personal GitHub account. Notice that we&#8217;re able to attach an identity file to the host. Let&#8217;s add another one for the company account. Directly below the code above, add:</p>
+<pre class="brush: bash; title: ; notranslate" title="">
+Host github-COMPANY
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_COMPANY
+</pre>
+<p>This time, rather than setting the host to <code>github.com</code>, we&#8217;ve named it as <code>github-COMPANY</code>. The difference is that we&#8217;re now attaching the new identity file that we created previously: <code>id_rsa_COMPANY</code>. Save the page and exit!</p>
+<hr />
+<h2><span>Step 4 &#8211; </span>Try it Out</h2>
+<p>It&#8217;s time to see if our efforts were successful. Create a test directory, initialize git, and create your first commit.</p>
+<pre class="brush: bash; title: ; notranslate" title="">
+git init
+git commit -am &quot;first commit'
+</pre>
+<p>Login to your company account, create a new repository, give it a name of &#8220;Test,&#8221; and then return to the Terminal and push your git repo to GitHub.</p>
+<pre class="brush: bash; title: ; notranslate" title="">
+git remote add origin git@github-COMPANY:Company/testing.git
+git push origin master
+</pre>
+<p>Note that, this time, rather than pushing to <code>git@github.com</code>, we&#8217;re using the custom host that we create in the<br />
+config file: <code>git@github-COMPANY</code>.</p>
+<p>Return to GitHub, and you should now see your repository. Remember:</p>
+<ul>
+<li>When pushing to your personal account, proceed as you always have.</li>
+<li>For your company account, make sure that you use <code>git!github-COMPANY</code> as the host.</li>
+</ul>
+<p>Be sure to refer to the screencast if you need a more visual overview of the steps above! </p>
+<div style="clear:both;padding-bottom:20px;"><fb:like layout="standard" width="450" height="30"></fb:like></div>
+<p style="text-align: center;"><!-- BuySellAds.com Zone Code -->
+<div id="bsap_1260864" class="bsarocks bsap_d754f1e9ba63a736ba8ff5ece958f7dd"></div>
+<!-- End BuySellAds.com Zone Code --></p>  
+    
+</div>
+            
+                        
+            <div id="tag-list"><span>Tags:</span> <a href="http://net.tutsplus.com/tag/git/">git</a><a href="http://net.tutsplus.com/tag/github/">github</a><a href="http://net.tutsplus.com/tag/tips/">tips</a><a href="http://net.tutsplus.com/tag/videos/">Videos</a></div>            
+            <div class="post_footer" style="padding-bottom: 170px;">
+            
+              <div class="enjoyed_post">
+                <span class="thumb_icon">&nbsp;</span>
+                <h5>Enjoyed this Post?</h5>
+                <p>Subscribe to our <a href="http://feeds.feedburner.com/nettuts">RSS Feed</a>, <a href="http://twitter.com/envatowebdev">Follow us on Twitter</a> or simply recommend us to friends and colleagues!</p>
+                <!-- Social Media -->
+                <div class="article_social_media">
+                  <div class="tweetmeme_btn">
+                    <a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                  </div>
+                  <div class="facebook_send_btn left">
+                    <g:plusone size="medium" count="false"></g:plusone>
+                  </div>
+                                    <div class="facebook_btn">
+                    <fb:like layout="button_count" width="100" height="21"></fb:like>
+                  </div>
+                </div>
+                <!-- [END] Social Media -->
+              </div>
+              
+              <div class="the_author">
+                <img alt='' src='http://1.gravatar.com/avatar/5800ab190a877b8ff9fb8fd39cd25fbf?s=40&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D40&amp;r=PG' class='avatar avatar-40 photo' height='40' width='40' />                <h5>By <a href="http://net.tutsplus.com/author/jeffreyway/" title="Posts by Jeffrey Way">Jeffrey Way</a></h5>
+                <p class="the_author_p">Rollover to read this author's bio or click through to see a full list of posts by this author.</p>
+                <div class="autor_div">
+                  I'm the editor of <a href="http://net.tutsplus.com">Nettuts+</a>, and help out on the <a href="http://codecanyon.net">Envato marketplaces.</a>. I also (very infrequently) blog on <a href="http://jeffrey-way.com">my personal site</a>. Feel free to check that out as well...if you're bored. <a href="http://www.twitter.com/envatowebdev">Follow us</a> on Twitter, and subscribe to the official Nettuts+ <a href="http://www.youtube.com/user/nettutsplus">YouTube page</a> if you want to live.                  <span class="arrow">&nbsp;</span>
+                </div>
+              </div>
+              
+              <br class="clear" />
+              
+                            <div class="plus_membership">
+                <div class="plus_membership_text">
+                  <a href="" class="plus_icon">Plus Premium</a>
+                  
+                  <div id="logged-in-plus-footer" style="display: none;">
+
+                    <div class="plus_content wide">
+                      <h3>Hello!</h3>
+                      <p>You can grab source files and bonus tutorials from the <a href="http://tutsplus.com/">members area</a>.</p>
+                                          </div>
+                    <div class="plus_form">
+            
+                    </div>
+                  </div>
+                  
+                  <div id="logged-out-plus-footer" style="display: none;">
+                  
+                    <div class="plus_content">
+                      <h3>Premium Members</h3>
+                      <p>Source Files, Bonus Tutorials &amp; More for all relevant Tuts+ sites in one subscription. <a href="http://tutsplus.com/amember/signup.php">Join Now</a></p>
+                    </div>
+                    <div class="plus_form">
+                      <form name="login" method="post" action="http://tutsplus.com/amember/login.php?amember_redirect_url=http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/" id="signIn">
+                        <fieldset>
+                        <input type="text" name="amember_login" id="username" class="input" />
+                        <input type="password" name="amember_pass" id="password" class="input" />
+                        <input type="submit" id="submit_plus" class="submit_plus" value="Sign In" />
+                        </fieldset>
+                      </form>
+                    </div>
+
+                  </div>
+                  
+                </div>
+                <div class="left_corner">&nbsp;</div>
+                <div class="right_corner">&nbsp;</div>
+              </div>
+
+              
+              <script type="text/javascript">
+                if (plus_member_logged_in()) {
+                  $('#logged-in-plus-footer').show()
+                } else {
+                  $('#logged-out-plus-footer').show()
+                }
+              </script>
+              
+            </div>
+            
+            <div class="post extra_posts single">
+              <!--
+              <h3>Related Posts</h3>
+                            -->
+            </div>
+            
+            <div class="comments">  
+              
+<!-- You can start editing here. -->
+<a href="#respond" name="comments" class="add_comment_link">Add Comment</a>
+<h1 class="comments-header">Discussion <span>17 Comments</span></h1>
+
+    
+  <ol class="commentlist">
+  			<li class="comment even thread-even depth-1" id="comment-385843">
+				<div id="div-comment-385843" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/459851c89aedd417d30cbfd00f510ebf?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn"><a href="http://www.mikhailkozlov.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','www.mikhailkozlov.com']);"  rel='external nofollow' class='url'>Mikhail</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-385843">
+			November 2, 2011 at 5:44 pm</a>		</div>
+
+		<p>Jeffrey, I always wonder how you get your timing that good.<br />
+Been using organizations for a bit now, but recently needed just what describe. thanks</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=385843#respond' onclick='return addComment.moveForm("div-comment-385843", "385843", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-385865">
+				<div id="div-comment-385865" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/34cfd10a006eba978f60e5861ece782d?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn"><a href="http://www.iamonly4u.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','www.iamonly4u.com']);"  rel='external nofollow' class='url'>Arun</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-385865">
+			November 2, 2011 at 9:18 pm</a>		</div>
+
+		<p>Hey Jeffery can you please upload a screencast on php and pdf files?? Something like a invoice generator?</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=385865#respond' onclick='return addComment.moveForm("div-comment-385865", "385865", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1" id="comment-385871">
+				<div id="div-comment-385871" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/c9a3748d304e7f773d15e1ccec3ab1ac?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn"><a href="http://arlocarreon.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','arlocarreon.com']);"  rel='external nofollow' class='url'>Arlo Carreon</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-385871">
+			November 2, 2011 at 9:55 pm</a>		</div>
+
+		<p>What is the main difference between a seperate account for a company/client and an &#8220;Github Organization&#8221;?  </p>
+<p>From the little I know, Github organizations lets you associate your existing account with that company/client name.  The company/client aren&#8217;t ever a separate user account, just an organizational unit where ownership can be passed around. Kinda like facebook pages.  </p>
+<p>When is an actual separate account more useful for companies/clients?</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=385871#respond' onclick='return addComment.moveForm("div-comment-385871", "385871", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-385945">
+				<div id="div-comment-385945" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/f4fdcc9243d55a92dd2b3a9e2568bae0?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn"><a href="http://jhu-ror.heroku.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','jhu-ror.heroku.com']);"  rel='external nofollow' class='url'>Kalman Hazins</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-385945">
+			November 3, 2011 at 6:10 am</a>		</div>
+
+		<p>Good post. </p>
+<p>I personally found that a much simpler way of doing things is by using the https protocol with github as is described in this post <a href="https://github.com/blog/642-smart-http-support" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','github.com']);" rel="nofollow">https://github.com/blog/642-smart-http-support</a>. I understand that git/ssh way of doing things might be a bit more efficient, but I never had any problems with the https approach.</p>
+<p>-Kalman Hazins<br />
+<a href="http://jhu-ror.heroku.com/lecture_slides/Lecture1-Git-and-Github.pdf" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','jhu-ror.heroku.com']);" rel="nofollow">http://jhu-ror.heroku.com/lecture_slides/Lecture1-Git-and-Github.pdf</a></p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=385945#respond' onclick='return addComment.moveForm("div-comment-385945", "385945", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1" id="comment-385966">
+				<div id="div-comment-385966" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/8158fd134685edc3816cb6c3d15acfff?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn"><a href="http://alpheus.me/" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','alpheus.me']);"  rel='external nofollow' class='url'>Craig Ludington</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-385966">
+			November 3, 2011 at 8:31 am</a>		</div>
+
+		<p>A summary in the introduction would have helped. For example:</p>
+<p>&#8220;By creating different host aliases to github.com in your ~/.ssh/config,<br />
+and giving each host alias its own ssh key, you can easily use multiple<br />
+github accounts without confusion.</p>
+<p>That&#8217;s because github.com distinguishes not by user, which is always just git,<br />
+but by the ssh key you used to connect.</p>
+<p>Just configure your remote origins using your own host aliases.&#8221;</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=385966#respond' onclick='return addComment.moveForm("div-comment-385966", "385966", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-385993">
+				<div id="div-comment-385993" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/f7466fa0b7ef7bbafb152d9c20ed3687?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn"><a href="http://www.github.com/dotink/" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','www.github.com']);"  rel='external nofollow' class='url'>Matthew J. Sahagian</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-385993">
+			November 3, 2011 at 11:54 am</a>		</div>
+
+		<p>Why would you have multiple GitHub Accounts?  Aside from an Organization (which isn&#8217;t really an account in the proper sense since you don&#8217;t sign into it directly).</p>
+<p>One of the major benefits of the way GitHub does things is the fact that I can be added as a private collaborator to all the closed source companies I work for.  Why wouldn&#8217;t they simply add my existing user to their organization?</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=385993#respond' onclick='return addComment.moveForm("div-comment-385993", "385993", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1" id="comment-386011">
+				<div id="div-comment-386011" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/3dc4e07de610c177232f3c1ddcc25aeb?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn">Charles Wang</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-386011">
+			November 3, 2011 at 5:05 pm</a>		</div>
+
+		<p>I actually just did this the other day and I had to look it up on the Github docs, but you provided a wonderful screencast. I think one of the things that helped me a lot when debugging issues was trying something like &#8220;ssh -vT <a href="mailto:git@github.com">git@github.com</a>&#8221; or &#8220;ssh -vT git@github-client&#8221; depending upon how you set up your hosts.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=386011#respond' onclick='return addComment.moveForm("div-comment-386011", "386011", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-386113">
+				<div id="div-comment-386113" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/2857b123c28e2569e43b70184d21db5a?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn"><a href="http://coderbay.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','coderbay.com']);"  rel='external nofollow' class='url'>coderbay</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-386113">
+			November 4, 2011 at 2:01 pm</a>		</div>
+
+		<p>worth reading.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=386113#respond' onclick='return addComment.moveForm("div-comment-386113", "386113", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1 parent" id="comment-386465">
+				<div id="div-comment-386465" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1521be4ca2e0d4d98404aaeafebc7780?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn"><a href="http://www.davidsafar.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','www.davidsafar.com']);"  rel='external nofollow' class='url'>David Safar</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-386465">
+			November 7, 2011 at 11:55 pm</a>		</div>
+
+		<p>Many thanks for this.  I&#8217;ve been searching for a way to do this for about 45 minutes &#8212; it appears that there used to be a doc on the GitHub help pages about this, but it no longer exists.  This article was a life-saver!</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=386465#respond' onclick='return addComment.moveForm("div-comment-386465", "386465", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment odd alt depth-2" id="comment-386527">
+				<div id="div-comment-386527" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/3dc4e07de610c177232f3c1ddcc25aeb?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn">Charles Wang</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-386527">
+			November 8, 2011 at 2:49 pm</a>		</div>
+
+		<p>It still exists on Github, it can be found at <a href="http://help.github.com/manage-multiple-clients/" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','help.github.com']);" rel="nofollow">http://help.github.com/manage-multiple-clients/</a></p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=386527#respond' onclick='return addComment.moveForm("div-comment-386527", "386527", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-387479">
+				<div id="div-comment-387479" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/0efbb4b98858b384b4e2890539b27bcd?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn">Shuky</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-387479">
+			November 15, 2011 at 10:43 pm</a>		</div>
+
+		<p>A nicer way to go I think is with this gem,</p>
+<p><a href="https://github.com/walle/gas" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','github.com']);" rel="nofollow">https://github.com/walle/gas</a></p>
+<p>Give it a try.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=387479#respond' onclick='return addComment.moveForm("div-comment-387479", "387479", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-even depth-1" id="comment-393278">
+				<div id="div-comment-393278" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/a6fd130dda6e6b4fe0d991624930a9a3?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn">Erin Brown</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-393278">
+			December 30, 2011 at 2:21 pm</a>		</div>
+
+		<p>Thank you for this tutorial. Very helpful!</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=393278#respond' onclick='return addComment.moveForm("div-comment-393278", "393278", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-393818">
+				<div id="div-comment-393818" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/091084434e6f610494ebb09ba1a85966?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn">deadshox</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-393818">
+			January 4, 2012 at 12:52 am</a>		</div>
+
+		<p>Hey. Thanks a lot for this. It was very helpful. :)</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=393818#respond' onclick='return addComment.moveForm("div-comment-393818", "393818", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-even depth-1" id="comment-395038">
+				<div id="div-comment-395038" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/a0f940551239204d47630a10cd5154b4?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn"><a href="http://joshdiehl.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','joshdiehl.com']);"  rel='external nofollow' class='url'>Josh Diehl</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-395038">
+			January 14, 2012 at 8:28 pm</a>		</div>
+
+		<p>Thanks, just what I needed for my github work//home situation.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=395038#respond' onclick='return addComment.moveForm("div-comment-395038", "395038", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-402198">
+				<div id="div-comment-402198" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/ae5bee033b37932bcd7461d1b23c2b0e?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn">Mike V</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-402198">
+			March 15, 2012 at 7:56 am</a>		</div>
+
+		<p>I&#8217;ve watched this video and followed all the SSH steps (as well as followed other tutorials on this topic which all say pretty much the same thing), but every time I try to &#8220;git push -u origin master&#8221; from my secondary account&#8217;s git repo, my Mac instead sends my primary SSH key.  Git then responds with</p>
+<p>ERROR: Permission to SecondaryAccount/testing.git denied to PrimaryAccount.</p>
+<p>I don&#8217;t see what I&#8217;m doing wrong&#8230;?</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=402198#respond' onclick='return addComment.moveForm("div-comment-402198", "402198", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-even depth-1" id="comment-402614">
+				<div id="div-comment-402614" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/bfacdd9716d5fe05db7e9e4bace1ebc0?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn"><a href="http://deepumohan.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','deepumohan.com']);"  rel='external nofollow' class='url'>Deepu Mohan Puthrote</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-402614">
+			March 19, 2012 at 3:48 am</a>		</div>
+
+		<p>If on windows, first run<br />
+&#8216;exec ssh-agent bash&#8217;<br />
+and then<br />
+&#8216;ssh-add ~/.ssh/id_rsa&#8217;</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=402614#respond' onclick='return addComment.moveForm("div-comment-402614", "402614", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-402615">
+				<div id="div-comment-402615" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/f66dfe536cc7c61f0808ace8567d15db?s=80&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D80&amp;r=PG' class='avatar avatar-80 photo' height='80' width='80' />		<cite class="fn"><a href="http://deepumohan.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','deepumohan.com']);"  rel='external nofollow' class='url'>Deepu Mohan Puthrote</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/comment-page-1/#comment-402615">
+			March 19, 2012 at 3:49 am</a>		</div>
+
+		<p>If on windows, first run<br />
+‘exec ssh-agent bash’<br />
+and then<br />
+‘ssh-add ~/.ssh/id_rsa’</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/?replytocom=402615#respond' onclick='return addComment.moveForm("div-comment-402615", "402615", "respond", "22574")'>Reply</a>		</div>
+				</div>
+		</li>
+  </ol>
+  
+  	
+
+
+<div id="respond">
+  
+  <a name="respond"></a>
+	<h1>Add a Comment</h1>
+
+		
+		<form action="http://net.tutsplus.com/wp-comments-post.php" method="post" id="commentform">
+
+		
+			<p class="input_block">
+		    <label for="author">Name</label>
+				<input type="text" name="author" class="txt" id="author" value="" size="22" tabindex="1" />
+			</p>
+
+			<p class="input_block">
+		    <label for="email">Email Address</label>
+				<input type="text" name="email" class="txt" id="email" value="" size="22" tabindex="2" />
+			</p>
+
+			<p class="input_block">
+		    <label for="url">URL</label>
+				<input type="text" name="url" class="txt" id="url" value="" size="22" tabindex="3" />
+			</p>
+
+		
+		<p class="textarea_block">
+		  <label for="comment">Your Comments</label>
+		  <textarea name="comment" id="comment" rows="15" cols="50" tabindex="4"></textarea>
+		</p>
+		
+				<p class="textarea_block">
+		  To add a code snippet to your comment, please wrap your code like so: &lt;pre name="code" class="html"&gt;YOUR CODE&lt;/pre&gt;. You can replace the class name with "js," "css," "sql," or "php." If there are any "&lt;" or "&gt;" within your code, please search and replace them with: &amp;lt; and &amp;gt; respectively. 
+		</p>
+				
+		<div class="cancel-comment-reply">
+		  <a rel="nofollow" id="cancel-comment-reply-link" href="/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/#respond" style="display:none;">Click here to cancel reply.</a>    </div>
+
+		<input name="submit" type="submit" id="add_comment" tabindex="5" value="Add Comment" />
+		<input type="hidden" name="comment_post_ID" value="22574" />
+		
+		<input type='hidden' name='comment_post_ID' value='22574' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+		<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="3202d4cd47" /></p>
+		</form><!-- /#commentform -->
+
+	
+</div><!-- /#respond -->
+
+            </div>
+          
+            	
+            
+              		  
+        </div>
+        
+      </div>
+      <!-- [END] Page -->
+
+    </div>
+    <!-- [END] Page Wrap -->
+		
+    <!-- sidebar -->
+    <div id="sidebar">
+
+      <!-- Subscriptions -->
+<div class="sidebar_subscribe">
+
+  <ul class="get_updates">
+    <li class="sm_rss"><a href="http://feeds.feedburner.com/nettuts">RSS Updates</a></li>
+    <li class="sm_facebook"><a href="http://facebook.com/nettutsplus">Facebook</a></li>
+    <li class="sm_twitter"><a href="http://twitter.com/envatowebdev">Twitter</a></li>
+    <li class="sm_google"><a href="https://plus.google.com/100395074731712398322" rel="external">Google+</a></li>    <li class="sm_email"><a href="http://feedburner.google.com/fb/a/mailverify?uri=nettuts">Email Updates</a></li>
+  </ul>
+  
+    <div class="feedburner_count s_count">
+    <span class="side-link"><em>RSS Subscribers</em> 
+      <a href="http://feeds.feedburner.com/nettuts">
+        101,006      </a>
+    </span>
+  </div>
+    
+    <div class="twitter_count s_count">
+    <span class="side-link"><em>Twitter Followers</em> 
+      <a href="http://twitter.com/envatowebdev">
+        51,794      </a>
+    </span>
+  </div>
+    
+    <div class="facebook_count s_count">
+    <span class="side-link"><em>Facebook Fans</em> 
+      <a href="http://facebook.com/nettutsplus">
+        36,171      </a>
+    </span>
+  </div>
+    
+</div>
+<!-- [END] Subscriptions -->
+
+<!-- Sidebar Ad Zone -->
+<div id="ads" style="display:none;">
+  <div id="bsap_1616" class="bsarocks bsap_d754f1e9ba63a736ba8ff5ece958f7dd"></div>  <a href="http://net.tutsplus.com/advertise/" class="side_advert_here">Advertise Here</a>
+</div>
+<script type="text/javascript">
+  if (!plus_member_logged_in()) {
+    $('#ads').show()
+  }
+</script>
+<!-- [END] Sidebar Ad Zone -->
+
+
+
+<!-- Plus Members -->
+<div id="premium-logged-out" style="display: none">
+          <div class="variant_c">
+            <div>
+              <a href="http://tutsplus.com/?WT.mc_id=nettuts_c" class="premium-button" rel="external">Tuts+ Premium</a>
+            </div>
+            <p class="link-out">Already a member? <a href="http://tutsplus.com/amember/login.php?amember_redirect_url=http://net.tutsplus.com/tutorials/tools-and-tips/how-to-work-with-github-and-multiple-accounts/">Sign In</a></p>
+          </div></div> 
+  <div class="plus_member" id="plus-sidebar-logged-in"  style="display: none">
+    <div class="plus_icon">
+      Plus Icon
+    </div>
+    <div class="plus_text">
+      <h3>Hello!</h3>
+      <p>Source Files, Bonus Tutorials &amp; More for all relevant Tuts+ sites in one subscription</p>
+      <ul>
+        <li><a href="http://tutsplus.com/">Visit Tuts+ Premium</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  if ( plus_member_logged_in() ) {
+    $('#plus-sidebar-logged-in').show();
+  } else {
+    $('#premium-logged-out').show();
+    $('#plus-sidebar-logged-out').show();
+  }
+  </script>
+
+<!-- [END] Plus Members -->
+
+<!-- Rockable Book -->
+      <div class="rockable_book">
+        <div class="rockable_book_icon">
+          <a href="http://rockablepress.com/books/decoding-html5" rel="external nofollow"><img src="http://rockable.s3.amazonaws.com/covers/135_decodinghtml5f.png" alt="Decoding HTML5" /></a>
+        </div>
+        <div class="rockable_book_text">
+      		<h3 class="side-link"><a href="http://rockablepress.com/books/decoding-html5" rel="external nofollow">Decoding HTML5</a></h3>
+          <p>Join Jeffrey Way as he dives into HTML5 and delivers something that the every day designer or developer can immediately pick up and understand!</p>
+          <ul>
+            <li><a href="http://rockablepress.com/books/decoding-html5" rel="external nofollow">Find Out More</a></li>
+          </ul>
+        </div>
+      </div>
+<!-- [END] Rockable Book -->
+
+<!-- Series/Session -->
+<!-- [END] Series/Session -->
+
+<!-- Snipplr -->
+<!-- [END] Snipplr -->
+
+<!-- Social Networking -->
+<div id="social_networking">
+
+  <ul class="tabs">
+    <li><a href="#facebook_tab" class="tab_2">Facebook</a></li>
+		<li><a href="#twitter_tab" class="tab_1">Twitter</a></li>				<li><a href="#google_tab" class="tab_4">Google+</a></li>	</ul>
+  
+  <!-- Facebook -->  
+  <div id="facebook_tab" class="tab_div">
+
+  </div>
+  <!-- [END] Facebook -->
+  
+  <!-- Twitter -->
+    <div id="twitter_tab" class="tab_div">
+    <h3>Follow <a href="http://twitter.com/envatowebdev">Nettuts+</a> and <a href="http://twitter.com/tutsplus">Tuts+</a> on Twitter</h3>
+    <ul><li><a href="http://www.twitter.com/RichJWAdams">@RichJWAdams</a> :)</li><li>Good Mac zoom tool for screencasts: <a href="http://t.co/DZ4wa6qe">http://t.co/DZ4wa6qe</a></li><li>30 Days To Learn jQuery hits 50,000 students! :) <a href="http://t.co/ER25uSnx">http://t.co/ER25uSnx</a></li><li><a href="http://www.twitter.com/DanHarper7">@DanHarper7</a> Nettuts?</li></ul>  </div>
+    <!-- [END] Twitter -->
+  
+  <!-- Flickr -->
+    <!-- [END] Flickr -->
+  
+    <!-- Google+ -->
+  <div id="google_tab" class="tab_div">
+    <div class="g-plus" data-href="https://plus.google.com/100395074731712398322" data-size="badge"></div>
+  </div>
+  <!-- [END] Google+ -->
+  
+</div>
+<!-- [END] Social Networking -->
+
+<!-- MailChimp -->
+  <div class="mail_chimp">
+    <div class="mail_chimp_icon">
+      <img src="http://net.tutsplus.com/wp-content/themes/tuts/images/theme/nettuts/mc-icon.jpg" alt="" />
+    </div>
+    <div class="mail_chimp_text">
+  		<h3>Join our newsletter!</h3>
+  		<form id="mc-signup" action="" method="get">
+        <fieldset> 
+          <p>
+            Get weekly updates and an exclusive un-released tutorial when you sign up to our free newsletter.          </p>
+          <div id="mc-response">
+                      </div>
+          <div class="clearfix">
+  				  <label for="mc-fname">Name</label>
+            <input type="text" name="mc-fname" id="mc-fname" class="mc_input" value="" size="18" />
+  				</div>
+  				<div class="clearfix">
+  				  <label for="mc-email">Email</label>
+            <input type="text" name="mc-email" id="mc-email" class="mc_input" value="" size="18" />
+  				</div>
+  				<input type="submit" name="mc-submit" value="Sign Up" id="mc_signup_submit" />
+        </fieldset>
+      </form><!-- [END] mc-signup -->
+    </div>
+  </div>
+<!-- [END] MailChimp -->
+
+<!-- Popular Marketplace Items --><div class="marketplace-wrap"><div class="marketplace-popular"><div class="site-codecanyon"><h3>Top Selling</h3> <span>on <a href="http://codecanyon.net" rel="external nofollow">Codecanyon</a></span></div><ul><li><a href="http://codecanyon.net/item/ubermenu-wordpress-mega-menu-plugin/154703" rel="external nofollow" title="UberMenu - WordPress Mega Menu Plugin"><img src="http://3.s3.envato.com/files/18012675/ubermenu_thumb.jpg" alt="" width="80" height="80" />UberMenu - WordPress Mega Me ... only $16.00 <span>by sevenspark</span></a></li><li><a href="http://codecanyon.net/item/royalslider-touchenabled-jquery-image-gallery/461126" rel="external nofollow" title="RoyalSlider – Touch-Enabled jQuery Image Gallery"><img src="http://0.s3.envato.com/files/12921311/8.0-small-image-preview.png" alt="" width="80" height="80" />RoyalSlider – Touch-Enable ... only $12.00 <span>by Semenov</span></a></li></ul></div></div><!-- [END] Popular Marketplace Items -->
+
+<!-- Sessions -->
+<!-- [END] Sessions -->
+
+
+<!-- Jobs -->
+<div id="fsjobs">
+   
+	<div id="fsjobs_header">
+		Freelance Jobs
+	</div>
+	<div id="fsjobs_body">
+    <ul id="fsjobs_list">
+    </ul>
+    <span class="side_job_number"> </span>
+    <a href="http://jobs.freelanceswitch.com" class="more_jobs" title="Freelance Job Board">More Freelance Jobs...</a>
+  </div>
+</div>
+<!-- [END] Jobs -->
+
+<!-- Basix -->
+<div class="side_basix">
+
+  <div class="basix_logo">
+    Basix
+  </div>
+  
+  <div class="basix_text">
+    <h3 class="side-link"><a href="http://net.tutsplus.com/tag/basix/">
+    Web Basix</a></h3>
+    <p>Just getting started? Start with our basix tutorials on the fundamentals. <a href="http://net.tutsplus.com/tag/basix/">View All Basix Tutorials</a></p>
+  </div>
+  
+</div>
+<!-- [END] Basix -->
+
+<!-- Write For Us -->
+<div class="write_for_us">
+
+  <h3 class="side-link"><a href="http://net.tutsplus.com/about/write-a-tutorial/">Create a Tutorial, Get Paid!</a></h3>
+  <p>Have something to teach the world? Want to earn money doing it? Tutorials, screencasts, and articles published here on Nettuts+ are largely contributed by readers just like you! We'll pay you great money for good content. <a href="http://net.tutsplus.com/about/write-a-tutorial/">Find Out More</a></p>
+  
+</div>
+<!-- [END] Write For Us -->
+
+      
+    </div>
+    <!-- [END] Sidebar -->
+	
+  </div>
+  <!-- [END] Content -->
+  
+</div>
+<!-- [END] Content Wrap -->
+
+<!-- Footer -->
+<div id="footer_wrap">
+  <div id="footer">
+    <div class="footer_inner">
+    
+      <div class="power_up">
+        <a href="http://net.tutsplus.com" class="footer_logo">Nettuts+</a>
+        <p class="plus_network">Part of the Plus education network</p>
+        <a href="http://envato.com" class="powered_by">Powered by: Envato</a>
+      </div>
+      
+      <ul class="get_updates">
+        <li class="sm_rss"><a href="http://feeds.feedburner.com/nettuts">RSS Updates</a></li>
+        <li class="sm_facebook"><a href="http://facebook.com/nettutsplus">Facebook</a></li>
+        <li class="sm_twitter"><a href="http://twitter.com/envatowebdev">Twitter</a></li>
+        <li class="sm_google"><a href="https://plus.google.com/100395074731712398322" rel="external">Google+</a></li>        <li class="sm_email"><a href="http://feedburner.google.com/fb/a/mailverify?uri=nettuts">Email Updates</a></li>
+      </ul>
+      
+      <ul class="footer_links">
+        <li class="first">Copyright &copy; 2012 <a href="http://envato.com">Envato</a></li>
+        <li><a href="http://net.tutsplus.com/advertise/">Advertise</a></li>
+        <li><a href="http://www.formstack.com/forms/envato-tuts__contact_form">Suggestions</a></li>
+        <li><a href="http://net.tutsplus.com/about/">About Us</a></li>
+        <li><a href="http://wefunction.com" rel="nofollow external">Icons by WeFunction</a></li>
+              </ul>
+      
+    </div>
+  </div>
+</div>
+<!-- [END] Footer -->
+
+<script type="text/javascript">
+  
+  // comment-ribbon 
+  $(function() {
+    $('.is-staff, .is-author').addClass('highlighted').children('div').wrapInner('<div class="wrap-comment" />');
+  });
+  
+  ;(function($) {
+    $('.site_switcher').click(function(e) {
+      $(this).toggleClass('active');
+      e.stopPropagation();
+    });
+    $(document).bind('click', function(e) {
+      if (!$(e.target).parents().hasClass('site_switcher')) {
+        $('.site_switcher').removeClass('active');
+      }
+    });
+  })(jQuery);
+
+  // session list text
+	/*
+$('.session-list li').hover(function(){
+    $(".session-block", this).slideDown('fast');
+	}, function() {
+		$(".session-block", this).stop(true, true).slideUp('fast');
+	});
+*/
+  (function($) {
+    $(document).ready(function() {
+      var list_count = $('.single-post .session-list ul').children().length;
+      if ( list_count > 1 ) {
+        $('.single-post .session-post em').append(' - <a href="JavaScript:void(0);" class="show-all">Show All</a>');
+      }
+      $('a.show-all').click(function() {
+        $('.session-list').toggle();
+      });
+    });
+  })(jQuery);
+</script>
+<script type="text/javascript" src="http://envato.s3.amazonaws.com/widget/widget.js"></script>
+				<script type='text/javascript'><!--
+			var seriesdropdown = document.getElementById("orgseries_dropdown");
+			if (seriesdropdown) { 
+			 function onSeriesChange() {
+					if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+						location.href = "http://net.tutsplus.com/series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+					}
+				}
+				seriesdropdown.onchange = onSeriesChange;
+			}
+			--></script>
+			<script type='text/javascript'>
+/* <![CDATA[ */
+var mcapi = {
+	url: "http://net.tutsplus.com/wp-content/themes/tuts/functions/mc/mail-chimp.php"
+};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://net.tutsplus.com/wp-content/themes/tuts/js/mail-chimp.js?ver=3.1.2'></script>
+<script class="javascript" src="http://net.tutsplus.com/wp-content/plugins/google-syntax-highlighter/Scripts/shCore.js"></script>
+<script class="javascript" src="http://net.tutsplus.com/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushAll.js"></script>
+	<script class="javascript">
+dp.SyntaxHighlighter.ClipboardSwf = 'http://net.tutsplus.com/wp-content/plugins/google-syntax-highlighter/Scripts/clipboard.swf';
+dp.SyntaxHighlighter.HighlightAll('code');
+</script>
+<script type='text/javascript' src='http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js?ver=3.0.83c'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.83c";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.83c";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['tab-size'] = 3;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<!-- 103 queries. 0.603 seconds -->
+</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.604 seconds -->
